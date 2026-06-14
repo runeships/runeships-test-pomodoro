@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Pomodoro</h1>
+      <p class="subtitle" id="mode-label">Focus session</p>
+    </header>
+
+    <section class="timer-section">
+      <div class="timer" id="timer">25:00</div>
+      <div class="controls">
+        <button id="start-btn" class="btn-primary">Start</button>
+        <button id="reset-btn" class="btn-secondary">Reset</button>
+        <button id="sound-btn" class="btn-icon" title="Toggle sound" aria-label="Toggle sound">🔊</button>
+      </div>
+      <p class="hint">Spacebar to start/pause · R to reset</p>
+    </section>
+
+    <section class="stats-section">
+      <h2>Stats</h2>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-value" id="today-time">0m</div>
+          <div class="stat-label">Today</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="week-time">0m</div>
+          <div class="stat-label">This week</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="today-sessions">0</div>
+          <div class="stat-label">Sessions today</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value" id="streak">0</div>
+          <div class="stat-label">Day streak</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chart-section">
+      <h2>Last 14 days</h2>
+      <div class="chart" id="chart"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
